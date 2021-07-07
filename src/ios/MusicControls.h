@@ -16,7 +16,7 @@
 
 @interface MusicControls : CDVPlugin {}
 
-@property NSString * latestEventCallbackId;
+@property (nonatomic, strong) NSString * latestEventCallbackId;
 
 - (void) create: (CDVInvokedUrlCommand *) command;
 - (void) updateIsPlaying: (CDVInvokedUrlCommand *) command;

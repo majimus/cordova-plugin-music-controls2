@@ -205,7 +205,7 @@ MusicControlsInfo * musicControlsSettings;
         return;
     }
 
-    if (receivedEvent.type) {
+    if (receivedEvent.type == UIEventTypeRemoteControl) {
         NSString * action;
 
         switch (receivedEvent.subtype) {
